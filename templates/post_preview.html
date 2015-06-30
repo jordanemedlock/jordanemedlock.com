@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+      <a href="/post/{{ post['slug'] }}">
+        {{ post['title'] }}
+      </a>
+    </h2>
+  </div>
+  {% if big %}
+    <div class="panel-body panel-body-big">
+  {% else %}
+    <div class="panel-body panel-body-small">
+  {% end %}
+    {% raw post['body'] %}
+  </div>
+</div>

@@ -1,0 +1,46 @@
+
+
+#my-pic {
+	height: 300px
+}
+
+.email {
+	font-size: 2em;
+}
+
+.panel-body-small > :not(.preview){
+  display: none;
+}
+
+.panel-body-small .preview {
+  visibility: visible;
+}
+
+
+.panel-body img {
+  margin-left: 20px;
+}
+
+.go-home {
+  margin-bottom: 20px;
+  border-radius: 0px;
+}
+
+.panel {
+  border-radius: 0px;
+}
+
+.websites img {
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+
+.websites img:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+.thumbnail {
+  margin-bottom: 0px;
+  padding: 0px;
+  background-color: none;
+}

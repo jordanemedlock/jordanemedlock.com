@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block css %}
+  <link rel="stylesheet" href="/static/css/home.css">
+{% end %}
+
+{% block js %}
+  <script src="/static/js/home.js"></script>
+{% end %}
+
+{% block contents %}
+  {% if big %}
+    <div class="row">
+      <a href="/" class="btn btn-primary btn-lg go-home">Home</a>
+    </div>
+    <nav>
+      <ul class="pager">
+        {% if prev_post is not None %}
+          <li class="previous">
+            <a href="/post/{{ prev_post['slug'] }}">&larr; {{ prev_post['title'] }}</a>
+          </li>
+        {% end %}
+        {% if next_post is not None %}
+          <li class="next">
+            <a href="/post/{{ next_post['slug'] }}">{{ next_post['title'] }} &rarr;</a>
+          </li>
+        {% end %}
+      </ul>
+    </nav>
+  {% end %}
+  <div class="row">
+    {% if not big %}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            Portfolio
+          </h2>
+        </div>
+        <div class="panel-body">
+          <div class="websites">
+            <div class="col-md-3">
+              <a href="http://bombaydevelopment.com">
+                <img src="/static/img/BombayDevelopment.png" alt="bombaydevelopment.com" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="http://ccscupcakes.com">
+                <img src="/static/img/ccscupcakes.jpg" alt="ccscupcates.com" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="http://psychtruths.com">
+                <img src="/static/img/PsychTruths.png" alt="psychtruths.com" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="http://uaft.org">
+                <img src="http://uaft.org/data/photos/Umali-logo-vert.jpeg" alt="uaft.org" class="img-responsive"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% end %}
+    {% for post in posts %}
+      {% include "post_preview.html" %}
+    {% end %}
+  </div>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Bottom Jem responsive -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5538815950211822"
+       data-ad-slot="8186874197"
+       data-ad-format="auto"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+{% end %}

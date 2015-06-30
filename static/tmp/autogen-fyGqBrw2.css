@@ -1,0 +1,17 @@
+h1 {
+    text-align: center
+;
+}
+.icon {
+    height: 50px;
+    vertical-align: middle;
+}
+.haskell-logo {
+    height: 50px;
+}
+nav.paginator {
+    text-align: center;
+}
+textarea.markdown {
+    height: 100em;
+}

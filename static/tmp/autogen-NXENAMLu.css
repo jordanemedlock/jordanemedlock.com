@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    font-size: 30pt;
+}
+.icon {
+    height: 50px;
+    vertical-align: middle;
+}
+.haskell-logo {
+    height: 50px;
+}
+nav.paginator {
+    text-align: center;
+}
+textarea.markdown {
+    height: 40em;
+    font-family: 'Courier';
+    tab-size: 4;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    white-space: pre-wrap;
+}
+textarea.preview.markdown {
+    height: 20em;
+}
+.panel-title {
+    font-size: 2.5em;
+}
+.info {
+    color: #AA9;
+}
+small {
+    font-size: 12pt;
+}
+iframe {
+    padding: 10px;
+    border: 2px;
+    border-color: #000;
+}
+.spoilers:active pre,.spoilers:active code,.spoilers:active pre span,.spoilers:active code span {
+    color: rgb(221, 221, 221) !important;
+}
+.spoilers pre,.spoilers code,.spoilers pre span,.spoilers code span {
+    background-color: rgb(39, 40, 34) !important;
+    color: rgb(39, 40, 34) !important;
+}
+.red {
+    color: #D00;
+    font-weight: bold;
+}
+.extra-small {
+    font-size: 0.5em;
+}
+img.preview-image {
+    max-height: 300px;
+}

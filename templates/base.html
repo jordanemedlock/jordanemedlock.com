@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Jordan E Medlock</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="/static/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/bootstrap-social.css">
+
+  <link rel="stylesheet" href="/static/css/base.css">
+
+  {% block css %}
+
+  {% end %}
+
+  <script src="/static/highlight/highlight.pack.js"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/static/js/square-backgrounds.js" type="text/javascript"></script>
+  <script src="/static/js/base.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/static/highlight/styles/monokai.css">
+
+  {% block js %}
+
+  {% end %}
+</head>
+<body>
+
+  <canvas class="square-backgrounds"></canvas>
+  <div class="container">
+    <header class="jumbotron">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1>
+            <a href="/">
+              Jordan E Medlock
+            </a>
+          <p>
+            <a href="/bio">
+              About Me
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <img class="pull-right img-responsive me" src="/static/img/jem.png" alt="">
+        </div>
+      </div>
+    </header>
+    <div id="main" role="main">
+      {% block contents %}
+        Oops page not found.
+      {% end %}
+    </div>
+    <footer>
+      Some copyright
+    </footer>
+  </div>
+</body>
+</html>
